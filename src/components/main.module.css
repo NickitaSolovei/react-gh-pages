@@ -1,0 +1,87 @@
+
+.myClass {
+    background-color: red;
+    border-right: 1px solid black;
+
+    flex-grow: 3;
+
+}
+
+.height100 {
+    height: 100%;
+}
+
+.fullscreen {
+    background-color: gainsboro;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.headerClass {
+    flex: 0 0 auto;
+}
+
+.mainMessage {
+    flex: 1 1 auto;
+}
+
+.messages {
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+}
+
+.wrapmessages {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 auto;
+}
+
+.headerMessages {
+    flex: 1 1 300px;
+
+
+    overflow-y: auto;
+    overflow-x:hidden ;
+
+    overflow-wrap: break-word;
+}
+
+.messageBottom {
+    flex: 0 0 auto;
+
+    padding: 6px;
+}
+
+.messageContainer {
+    padding: 10px;
+}
+
+.messageFirstLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageFrom {
+    flex: 0 0 auto;
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.messageTime {
+    flex: 0 0 auto;
+    color: lightslategray;
+}
+
+.messageSecondLine {
+    padding: 5px;
+}

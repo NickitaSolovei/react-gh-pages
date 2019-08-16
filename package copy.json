@@ -1,17 +1,13 @@
 {
-  "name": "react-gh-pages",
+  "name": "chat2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-
-
     "bootstrap-4-react": "0.0.59",
-
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
-
+    "react-scripts": "3.0.1",
     "react-textarea-autosize": "^7.1.0",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0"
@@ -21,10 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
-
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build:prod": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "dev": "webpack-dev-server",
+    "buildNew": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,9 +38,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-
-
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
@@ -72,6 +65,10 @@
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
   },
-  "homepage": "http://NickitaSolovei.github.io/react-gh-pages"
-
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
 }
